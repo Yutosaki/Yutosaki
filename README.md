@@ -44,4 +44,4 @@
 ### You can create a profile like this form [here](https://teamsasa.github.io/readme-generator/)!
 ### You can also use profile icon like [this](https://github.com/Teamsasa/github-sns-profile-card) 
 
-<!-- i wan born september 6 in 2003-->
+<!-- I was born on September 6, 2003-->
