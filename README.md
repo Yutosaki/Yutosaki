@@ -2,8 +2,8 @@
 <br/>
 <div align="center">
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Yutosaki&theme=tokyonight"/>
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Keichan15&theme=tokyonight"/>
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Keichan15&theme=tokyonight"/>
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Yutosaki&theme=tokyonight"/>
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Yutosaki&theme=tokyonight"/>
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Yutosaki&theme=tokyonight"/>
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Yutosaki&theme=tokyonight&utcOffset=9"/>
 
