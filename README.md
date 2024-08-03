@@ -1,4 +1,5 @@
-<h2 align="center">📚 GitHub Profile Summary Cards 📚</h2>
+<h3 align="center">📚 GitHub Profile Summary Cards 📚</h3>
+
 <br/>
 <div align="center">
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Yutosaki&theme=tokyonight"/>
