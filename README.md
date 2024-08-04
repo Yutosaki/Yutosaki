@@ -1,4 +1,4 @@
-<h3 align="center">📚 GitHub Profile Summary Cards 📚</h3>
+<h2 align="center">📚 GitHub Profile Summary Cards 📚</h    2>
 
 <br/>
 <div align="center">
