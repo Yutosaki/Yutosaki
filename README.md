@@ -4,7 +4,7 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Yutosaki/Yutosaki/output/github-contribution-grid-snake.svg">
 </picture>
 
-<h2 align="center">📚 GitHub Profile Summary Cards 📚</h    2>
+<h2 align="center">📚 GitHub Profile Summary Cards 📚</h2>
 
 <br/>
 <div align="center">
