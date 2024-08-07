@@ -56,10 +56,14 @@ jobs:
       - name: Commit and push changes
         run: |
           git pull origin main --rebase
-          git add github-contribution-grid-snake.svg
-          git add github-contribution-grid-snake-dark.svg
-          git commit -m "Generate and update contribution snake" || echo "No changes to commit"
-          git push origin main || git push --force origin main
+          if [ -f github-contribution-grid-snake.svg ] && [ -f github-contribution-grid-snake-dark.svg ]; then
+            git add github-contribution-grid-snake.svg
+            git add github-contribution-grid-snake-dark.svg
+            git commit -m "Generate and update contribution snake" || echo "No changes to commit"
+            git push origin main || git push --force origin main
+          else
+            echo "SVG files not found. Skipping commit and push."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
