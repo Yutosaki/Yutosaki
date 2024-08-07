@@ -38,20 +38,27 @@ jobs:
           echo "Content of github-contribution-grid-snake.svg before change:"
           cat dist/github-contribution-grid-snake.svg | grep -o '#[0-9A-Fa-f]\{6\}'
 
-      - name: Change color in SVG files to blue
+      - name: Change color in SVG files to blue shades
         run: |
-          sed -i 's/#39d353/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#39d353/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
-          sed -i 's/#40c463/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#40c463/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
-          sed -i 's/#30a14e/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#30a14e/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
-          sed -i 's/#216e39/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#216e39/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          # Replace light green colors with light blue
+          sed -i 's/#39d353/#ADD8E6/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#39d353/#ADD8E6/g' dist/github-contribution-grid-snake-dark.svg
 
-      - name: Debug - Show SVG content after change
+          # Replace medium green colors with sky blue
+          sed -i 's/#40c463/#87CEEB/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#40c463/#87CEEB/g' dist/github-contribution-grid-snake-dark.svg
+
+          # Replace dark green colors with royal blue
+          sed -i 's/#30a14e/#4169E1/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#30a14e/#4169E1/g' dist/github-contribution-grid-snake-dark.svg
+
+          # Replace very dark green colors with dark blue
+          sed -i 's/#216e39/#00008B/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#216e39/#00008B/g' dist/github-contribution-grid-snake-dark.svg
+
+      - name: Debug - Show SVG content after color change
         run: |
-          echo "Content of github-contribution-grid-snake.svg after change:"
+          echo "Content of github-contribution-grid-snake.svg after color change:"
           cat dist/github-contribution-grid-snake.svg | grep -o '#[0-9A-Fa-f]\{6\}'
 
       - name: Copy generated files to repository
