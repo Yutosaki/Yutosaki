@@ -25,11 +25,20 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Change color in SVG files to blue
+        run: |
+          sed -i 's/#00FF00/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#00FF00/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+
       - name: Copy generated files to repository
         run: |
           cp dist/github-contribution-grid-snake.svg ./
           cp dist/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg
+
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -37,8 +46,6 @@ jobs:
           git add github-contribution-grid-snake-dark.svg
           git commit -m "Generate and update contribution snake"
           git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
