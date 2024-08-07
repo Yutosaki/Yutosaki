@@ -33,15 +33,32 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: Debug - Show SVG content before change
+        run: |
+          echo "Content of github-contribution-grid-snake.svg before change:"
+          cat dist/github-contribution-grid-snake.svg | grep -o '#[0-9A-Fa-f]\{6\}'
+
       - name: Change color in SVG files to blue
         run: |
-          sed -i 's/#39D353/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#39D353/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#39d353/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#39d353/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#40c463/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#40c463/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#30a14e/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#30a14e/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#216e39/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#216e39/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+
+      - name: Debug - Show SVG content after change
+        run: |
+          echo "Content of github-contribution-grid-snake.svg after change:"
+          cat dist/github-contribution-grid-snake.svg | grep -o '#[0-9A-Fa-f]\{6\}'
 
       - name: Copy generated files to repository
         run: |
           cp dist/github-contribution-grid-snake.svg ./
           cp dist/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg
+          ls -l *.svg
 
       - name: Configure Git
         run: |
