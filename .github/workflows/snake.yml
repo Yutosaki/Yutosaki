@@ -4,8 +4,7 @@ on:
     branches:
       - main
   schedule:
-      - cron: "0 1 * * *"
-      - cron: "0 13 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch:
 
 jobs:
@@ -25,12 +24,10 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
       - name: Copy generated files to repository
         run: |
           cp dist/github-contribution-grid-snake.svg ./
           cp dist/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg
-
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
