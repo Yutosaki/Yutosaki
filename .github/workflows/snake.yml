@@ -47,19 +47,19 @@ jobs:
         run: |
           # Replace light green colors with light blue
           sed -i 's/#9be9a8/#ADD8E6/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#9be9a8/#ADD8E6/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#00c647/#ADD8E6/g' dist/github-contribution-grid-snake-dark.svg
 
           # Replace medium green colors with sky blue
           sed -i 's/#40c463/#87CEEB/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#40c463/#87CEEB/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#0f6d31/#87CEEB/g' dist/github-contribution-grid-snake-dark.svg
 
           # Replace dark green colors with royal blue
           sed -i 's/#30a14e/#4169E1/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#30a14e/#4169E1/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#034525/#4169E1/g' dist/github-contribution-grid-snake-dark.svg
 
           # Replace very dark green colors with dark blue
           sed -i 's/#216e39/#00008B/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#216e39/#00008B/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#01311f/#00008B/g' dist/github-contribution-grid-snake-dark.svg
 
       - name: Debug - Show light mode SVG content after color change
         run: |
