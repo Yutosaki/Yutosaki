@@ -28,8 +28,8 @@ jobs:
 
       - name: Change color in SVG files to blue
         run: |
-          sed -i 's/#00FF00/#0000FF/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#00FF00/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#39D353/#0000FF/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#39D353/#0000FF/g' dist/github-contribution-grid-snake-dark.svg
 
       - name: Copy generated files to repository
         run: |
