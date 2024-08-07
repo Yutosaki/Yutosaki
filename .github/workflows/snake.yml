@@ -41,8 +41,8 @@ jobs:
       - name: Change color in SVG files to blue shades
         run: |
           # Replace light green colors with light blue
-          sed -i 's/#39d353/#ADD8E6/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/#39d353/#ADD8E6/g' dist/github-contribution-grid-snake-dark.svg
+          sed -i 's/#9be9a8/#ADD8E6/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/#9be9a8/#ADD8E6/g' dist/github-contribution-grid-snake-dark.svg
 
           # Replace medium green colors with sky blue
           sed -i 's/#40c463/#87CEEB/g' dist/github-contribution-grid-snake.svg
