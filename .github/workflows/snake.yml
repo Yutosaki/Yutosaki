@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -40,20 +42,24 @@ jobs:
         run: |
           cp dist/github-contribution-grid-snake.svg ./
           cp dist/github-contribution-grid-snake-dark.svg ./github-contribution-grid-snake-dark.svg
-          
-      - name: Remove old SVG files
+
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Remove old SVG files
+        run: |
           git rm -f github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg || true
           git commit -m "Remove old snake SVGs" || true
 
       - name: Commit and push changes
         run: |
+          git pull origin main --rebase
           git add github-contribution-grid-snake.svg
           git add github-contribution-grid-snake-dark.svg
-          git commit -m "Generate and update contribution snake"
-          git push origin main
+          git commit -m "Generate and update contribution snake" || echo "No changes to commit"
+          git push origin main || git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
