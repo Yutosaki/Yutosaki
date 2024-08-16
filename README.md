@@ -28,6 +28,7 @@
     <img src="https://github-profile-trophy.vercel.app/?username=Yutosaki&theme=tokyonight"/>
 </div>
 
+<h2 align="center">🔥 Keep In Mind 🔥</h2>
 <div align="center">
   <img alt="typograssy" src="https://typograssy.deno.dev/api?text=Code%20with%20Passion!%E3%80%80">
 </div>
