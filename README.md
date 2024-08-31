@@ -33,3 +33,9 @@
   <img alt="typograssy" src="https://typograssy.deno.dev/api?text=Code%20with%20Passion!%E3%80%80">
 </div>
 
+<h2 align="center">🎨 Others 🎨</h2>
+<div align="center">
+  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki"/>
+  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto"/>
+</div>
+  
