@@ -36,8 +36,10 @@
 
 <h2 align="center">🎨 Others 🎨</h2>
 <div align="center">
-  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki"/>
-  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto"/>
+
+### [Qiita](https://qiita.com/Yutosaki)  
+### [Atcoder](https://atcoder.jp/users/SasakiYuto)
+
 </div>
 
 ### You can create a profile like this form [here](https://readmes.studio/)!
