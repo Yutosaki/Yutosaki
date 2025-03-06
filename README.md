@@ -37,8 +37,8 @@
 <h2 align="center">🎨 Others 🎨</h2>
 <div align="center">
 
-### [Qiita](https://qiita.com/Yutosaki)  
-### [Atcoder](https://atcoder.jp/users/SasakiYuto)
+ <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki"/>
+ <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto"/>
 
 </div>
 
