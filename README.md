@@ -37,6 +37,7 @@
 <div align="center">
 
  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki"/>
+ <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=zenn&userid=yutosaki"/>
  <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto"/>
 
 </div>
