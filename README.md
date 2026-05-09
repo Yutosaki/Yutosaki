@@ -36,9 +36,9 @@
 <h2 align="center">🎨 Others 🎨</h2>
 <div align="center">
 
- <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki"/>
- <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=zenn&userid=yutosaki"/>
- <img src="https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto"/>
+ [![Qiita](https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=qiita&userid=Yutosaki)](https://qiita.com/Yutosaki)
+ [![Zenn](https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=zenn&userid=yutosaki)](https://zenn.dev/yutosaki)
+ [![Atcoder](https://github-sns-profile-card-e53bc5obaa-an.a.run.app/svg?platform=atcoder&userid=SasakiYuto)](https://atcoder.jp/users/SasakiYuto)
 
 </div>
 
